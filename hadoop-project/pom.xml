@@ -212,6 +212,8 @@
     <solr.version>7.7.0</solr.version>
     <openssl-wildfly.version>1.0.7.Final</openssl-wildfly.version>
     <jsonschema2pojo.version>1.0.2</jsonschema2pojo.version>
+    <nodejs.version>v10.23.1</nodejs.version>
+    <yarnpkg.version>v1.22.5</yarnpkg.version>
   </properties>
 
   <dependencyManagement>
