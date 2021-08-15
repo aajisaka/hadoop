@@ -400,6 +400,24 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
             </dependency>
           </dependencies>
         </plugin>
+        <plugin>
+          <groupId>org.openrewrite.maven</groupId>
+          <artifactId>rewrite-maven-plugin</artifactId>
+          <version>4.9.0</version>
+          <configuration>
+            <activeRecipes>
+              <recipe>org.openrewrite.java.testing.junit5.JUnit5BestPractices</recipe>
+            </activeRecipes>
+            <checkstyleConfigFile>hadoop-build-tools/src/main/resources/checkstyle/checkstyle.xml</checkstyleConfigFile>
+          </configuration>
+          <dependencies>
+            <dependency>
+              <groupId>org.openrewrite.recipe</groupId>
+              <artifactId>rewrite-testing-frameworks</artifactId>
+              <version>1.7.1</version>
+            </dependency>
+          </dependencies>
+        </plugin>
       </plugins>
     </pluginManagement>
 
